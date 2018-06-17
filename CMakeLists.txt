@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.11)
+cmake_minimum_required(VERSION 3.5)
 project(SFRAT LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 11)
@@ -16,14 +16,12 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 
 set(SOURCE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cxx
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/models/GO/GO.cxx
-    
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/models/Model.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/models/FTModel.cxx  
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/models/GO/GO.cxx    
 )
 
-set(HEADERS
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/models/GO/GO.h
-)
-
+include(src/CMakeLists.txt)
 add_executable(sfrat ${SOURCE} ${HEADERS})
 
 if ( CMAKE_CXX_COMPILER_ID MATCHES "Clang|AppleClang|GNU" )
