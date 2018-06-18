@@ -13,7 +13,7 @@ FTModel::FTModel(vector<float> *d):Model(d){
     int count = 0;
     for(auto it = this->data->begin(); it < this->data->end(); it++){
         this->totalT += *it;
-        this->fn->push_back(count);
+        this->fn.push_back(count);
         count++; 
     }
 

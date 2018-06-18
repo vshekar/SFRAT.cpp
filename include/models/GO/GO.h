@@ -19,6 +19,8 @@ public:
     void MTTF();
     void FI();
     void R();
+    void lnL();
+    float MVF_cont(float t);
 
 protected:
     float a_MLE;
@@ -28,5 +30,6 @@ protected:
     vector<float> mttf;
     vector<float> fi;
     vector<float> r;
+    float lnl;
 };
 #endif
