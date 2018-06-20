@@ -1,18 +1,18 @@
-// Go.h
+// MO.h
 
 
-#ifndef __GO_H__
-#define __GO_H__
+#ifndef __MO_H__
+#define __MO_H__
 #include"models/FTModel.h"
 
 
 using namespace std;
 
-class GO: public FTModel {
+class MO: public FTModel {
 public:
-    GO();
-    GO(vector<float> *d);
-    virtual ~GO();
+    MO();
+    MO(vector<float> *d);
+    virtual ~MO();
     float MLE(float b);
     void run();
     void lnL();

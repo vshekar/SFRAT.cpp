@@ -18,7 +18,7 @@ set(SOURCE
     ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/src/models/Model.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/src/models/FTModel.cxx  
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/models/GO/GO.cxx    
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/models/MO/MO.cxx
 )
 
 include(src/CMakeLists.txt)

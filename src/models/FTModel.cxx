@@ -18,3 +18,6 @@ FTModel::FTModel(vector<float> *d):Model(d){
     }
 
 }
+
+
+FTModel::~FTModel(){}
